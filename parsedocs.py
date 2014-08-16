@@ -86,7 +86,6 @@ class Docs:
         self.vocab = vocab
         # a list of docs, each doc is represented by a list of tuples (word: topic) in order
         self.docs = docs
-        # TODO: get rid of this???
         self.len_docs = []
         self.D = D
 
@@ -108,7 +107,6 @@ class Docs:
 
     def __getslice__(self, i, j):
 
-        #TODO: figure out what i need to have
         return Docs(doc_dicts=self.doc_dicts[i:j], words=self.words, vocab=self.vocab, D=self.D)
 
     def __len__(self):
@@ -215,4 +213,3 @@ def yelp():
 
 if __name__=="__main__":
     nips()
-    #yelp()
