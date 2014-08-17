@@ -6,4 +6,6 @@ Currently implements a collapsed Gibbs sampler for LDA
 http://psiexp.ss.uci.edu/research/papers/sciencetopics.pdf)
 
 To run the file, type
+```
 > python gibbs.py
+```
